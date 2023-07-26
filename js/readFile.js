@@ -1,6 +1,6 @@
-const textArea = document.getElementById("textAr");
-const fileInput = document.getElementById("fileInput");
-
+//const textArea = document.getElementById("textAr");
+const fileInput = document.getElementById("file-input");
+const fileName = document.getElementById('file_name');
 let readFile = [];
 
 fileInput.addEventListener('change', readExcel);
@@ -20,8 +20,9 @@ function readExcel() {
                 header: 1,
             });
 
-            readFile = excelData.map((el) => el[0]);            
-            textArea.textContent = readFile;
+            readFile = excelData.map((el) => el[0]);
+            //textArea.textContent = readFile;
+            fileName.textContent = fileInput.value;
         };
 
         // Чтение файла в формате binary

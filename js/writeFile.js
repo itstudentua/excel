@@ -8,6 +8,7 @@ function generateExcel() {
         data.push([item]);
     }
 
+    
     const workbook = XLSX.utils.book_new();
     const worksheet = XLSX.utils.aoa_to_sheet(data);
 
