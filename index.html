@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+
+    </head>
+    <body>
+        <input type="file" id="fileInput" />
+        <button onclick="readExcel()">Прочитать файл Excel</button>
+        <textarea name="" id="textAr" cols="30" rows="10"></textarea>
+        
+        <textarea name="" id="textArInput" cols="30" rows="10">Welcome to the start of our journey
+
+            in this part one of the course.
+            
+            So this part is all about learning the React fundamentals.</textarea>
+
+        <button onclick="processWords()">Process</button>
+        
+        <br><br>
+        <button onclick="generateExcel()">Сгенерировать и скачать Excel</button>
+
+
+        <script src="js/readFile.js"></script>
+        <script src="js/processFile.js"></script>
+        <script src="js/writeFile.js"></script>
+    </body>
+</html>
